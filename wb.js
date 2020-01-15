@@ -53,6 +53,17 @@ console.log(typeof typeof 1);
 //---> (typeof number)
 //--> string
 
+//What is the output?
 
+let hero = {
+    name: 'John  Doe',
+    getSecretIdentity: function(){
+        return this.name;
+    }
+};
+let stoleSecretIdentity = hero.getSecretIdentity.bind(hero);
 
-//returns string because
+console.log(stoleSecretIdentity());
+console.log(hero.getSecretIdentity());
+
+// undefined and John Doe if you add .bind then you get John Doe John Doe
