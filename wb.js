@@ -29,3 +29,18 @@ function secretVariable(){
 }
 let getPrivateVariable = secretVariable();
 console.log(getPrivateVariable());
+
+//What is the output of this function?
+ let num = 4;
+ function outer(){
+     let num = 2;
+     function inner(){
+         num++;
+         let num = 3;
+         console.log(num);
+     }
+     inner();
+ }
+ outer();
+
+ //it will return the number 3
