@@ -31,16 +31,28 @@ let getPrivateVariable = secretVariable();
 console.log(getPrivateVariable());
 
 //What is the output of this function?
- let num = 4;
- function outer(){
-     let num = 2;
-     function inner(){
-         num++;
-         let num = 3;
-         console.log(num);
-     }
-     inner();
- }
- outer();
+//  let num = 4;
+//  function outer(){
+//      let num = 2;
+//      function inner(){
+//          num++;
+//          let num = 3;
+//          console.log(num);
+//      }
+//      inner();
+//  }
+//  outer();
 
  //it will return the number 3
+
+//what is the output?
+
+console.log(typeof typeof 1);
+//do order of operations
+// console.log(typeof (typeof 1));
+//---> (typeof number)
+//--> string
+
+
+
+//returns string because
