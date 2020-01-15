@@ -18,3 +18,14 @@ console.log(myArray);
 myArray = ['start',...myArray,'end'];
 console.log(myArray);
 
+// how do you create a private variable in JS?
+
+function secretVariable(){
+    //limit var scope
+    let private = "secret var";
+    return function(){
+        return private
+    }
+}
+let getPrivateVariable = secretVariable();
+console.log(getPrivateVariable());
