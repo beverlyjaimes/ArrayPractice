@@ -73,22 +73,22 @@ console.log(hero.getSecretIdentity());
 // Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
 
 function firstAndLast(input){
-    let newArr = []
+    let newArr = [];
     newArr.push(first(input));
     newArr.push(last(input));
     return newArr
 }
 
-// Exercise 64
+
 // Write a function definition named productOfAll that takes in sequence of numbers and returns the product of multiplying all the numbers together
 function productOfAll(input){
 
     if (toString.call(input) !== "[object Array]")
         return false;
 
-    var total   =   1;
+    let total   =   1;
 
-    for(var i=0;i<input.length;i++){
+    for(let i=0;i<input.length;i++){
         if(isNaN(input[i])){
             continue;
         }
