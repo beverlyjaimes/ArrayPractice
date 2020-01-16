@@ -78,3 +78,21 @@ function firstAndLast(input){
     newArr.push(last(input));
     return newArr
 }
+
+// Exercise 64
+// Write a function definition named productOfAll that takes in sequence of numbers and returns the product of multiplying all the numbers together
+function productOfAll(input){
+
+    if (toString.call(input) !== "[object Array]")
+        return false;
+
+    var total   =   1;
+
+    for(var i=0;i<input.length;i++){
+        if(isNaN(input[i])){
+            continue;
+        }
+        total   *=  Number(input[i]);
+    }
+    return total;
+}
