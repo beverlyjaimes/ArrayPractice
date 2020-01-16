@@ -67,3 +67,14 @@ console.log(stoleSecretIdentity());
 console.log(hero.getSecretIdentity());
 
 // undefined and John Doe if you add .bind then you get John Doe John Doe
+
+
+// Exercise 58
+// Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
+
+function firstAndLast(input){
+    let newArr = []
+    newArr.push(first(input));
+    newArr.push(last(input));
+    return newArr
+}
